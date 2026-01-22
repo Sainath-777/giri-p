@@ -1,7 +1,8 @@
 :root {
     --bg-color: #0a0a0a;
     --text-color: #e0e0e0;
-    --accent-color: #d4a373; /* Gold/Bronze accent similar to premium sites */
+    --accent-color: #d4a373;
+    /* Gold/Bronze accent similar to premium sites */
     --secondary-bg: #111111;
     --font-main: 'Inter', sans-serif;
     --font-heading: 'Playfair Display', serif;
@@ -11,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none; /* Custom cursor */
+    cursor: none;
+    /* Custom cursor */
 }
 
 body {
@@ -23,7 +25,8 @@ body {
 }
 
 /* Custom Cursor */
-.cursor-dot, .cursor-outline {
+.cursor-dot,
+.cursor-outline {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,11 +35,13 @@ body {
     z-index: 9999;
     pointer-events: none;
 }
+
 .cursor-dot {
     width: 8px;
     height: 8px;
     background-color: white;
 }
+
 .cursor-outline {
     width: 40px;
     height: 40px;
@@ -54,7 +59,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: linear-gradient(to bottom, rgba(10,10,10,0.9), transparent);
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.9), transparent);
 }
 
 .logo {
@@ -65,7 +70,8 @@ nav {
 }
 
 .menu-items {
-    display: none; /* Hidden on mobile initially, or styled for desktop */
+    display: none;
+    /* Hidden on mobile initially, or styled for desktop */
 }
 
 .menu-toggle {
@@ -80,6 +86,7 @@ nav {
         display: flex;
         gap: 2rem;
     }
+
     .menu-items a {
         color: var(--text-color);
         text-decoration: none;
@@ -87,9 +94,11 @@ nav {
         opacity: 0.7;
         transition: opacity 0.3s;
     }
+
     .menu-items a:hover {
         opacity: 1;
     }
+
     .menu-toggle {
         display: none;
     }
@@ -138,24 +147,7 @@ nav {
     margin-bottom: 3rem;
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-size: 0.8rem;
-    opacity: 0.6;
-}
 
-.scroll-indicator .line {
-    width: 1px;
-    height: 60px;
-    background-color: white;
-}
 
 /* Sections */
 .section {
@@ -173,7 +165,7 @@ nav {
 
 .section-header {
     margin-bottom: 4rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -236,7 +228,7 @@ h2 {
 .skill-category li {
     font-size: 1.1rem;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: padding-left 0.3s;
 }
 
@@ -248,7 +240,7 @@ h2 {
 
 /* Experience & Education */
 .timeline {
-    border-left: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding-left: 2rem;
 }
 
@@ -281,7 +273,7 @@ h2 {
 }
 
 .edu-card {
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.03);
     padding: 2rem;
     transition: transform 0.3s;
 }
@@ -313,8 +305,31 @@ h2 {
     background-color: #222;
     position: relative;
     overflow: hidden;
-    /* Placeholder for project images */
     background: linear-gradient(45deg, #222, #333);
+    display: block;
+    /* Ensure anchor behaves like block */
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--text-color);
+    /* Inherit text color */
+}
+
+#project-nutripic {
+    background: url('nutripic.png') no-repeat center center/cover;
+    transition: transform 0.5s;
+}
+
+#project-nutripic:hover {
+    transform: scale(1.02);
+}
+
+#project-attendance {
+    background: url('attendance.png') no-repeat center center/cover;
+    transition: transform 0.5s;
+}
+
+#project-attendance:hover {
+    transform: scale(1.02);
 }
 
 .project-info {
@@ -370,6 +385,13 @@ footer h2 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
