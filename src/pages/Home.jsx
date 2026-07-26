@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { Download, Mail, ArrowRight, ExternalLink } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import avatarImg from '../assets/Sai.png';
 
 // ─── Typing Effect Hook ──────────────────────────────────────────────────────
 const useTypingEffect = (roles, speed = 90, pause = 1800) => {
@@ -48,10 +49,11 @@ const HeroAvatar = () => (
         border: '2px solid rgba(124,115,245,0.5)',
       }}
     >
-      <div className="text-center select-none">
-        <div className="text-6xl sm:text-7xl font-heading font-bold gradient-text leading-none">SR</div>
-        <div className="text-xs font-mono text-textMuted mt-2 tracking-widest uppercase">Gayam Sainath Reddy</div>
-      </div>
+      <img
+        src={avatarImg}
+        alt="Gayam Sainath Reddy"
+        className="w-full h-full object-cover object-center"
+      />
       <div className="absolute inset-0 rounded-full"
         style={{ background: 'radial-gradient(ellipse at center, rgba(124,115,245,0.12) 0%, transparent 70%)' }}
       />
