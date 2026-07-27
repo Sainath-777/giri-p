@@ -38,19 +38,19 @@ const Contact = () => {
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const formData = new FormData();
-    formData.append('form-name', 'contact');
-    formData.append('name', form.name);
-    formData.append('email', form.email);
-    formData.append('message', form.message);
-
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
+      body: encode({ 'form-name': 'contact', ...form }),
     })
       .then(() => {
         setSent(true);
