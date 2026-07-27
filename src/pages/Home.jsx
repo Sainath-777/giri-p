@@ -257,7 +257,7 @@ const Home = () => {
             {/* Bio */}
             <motion.div variants={itemVariants} className="space-y-5 font-body text-textMuted leading-relaxed">
               <p>
-                I'm <span className="text-textPrimary font-medium">Gayam Sainath Reddy</span> — an AI/ML Engineer and Python Backend Developer from Tamil Nadu,
+                I'm <span className="text-textPrimary font-medium">Gayam Sainath Reddy</span> — an AI/ML Engineer and Python Backend Developer based in Hyderabad, India,
                 specialising in building and deploying production-grade AI systems that solve real-world problems.
               </p>
               <p>

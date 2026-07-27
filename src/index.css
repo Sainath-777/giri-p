@@ -6,16 +6,6 @@
 
 @layer base {
   :root {
-    --color-bg: 13 13 26;           /* #0D0D1A */
-    --color-card: 19 19 43;         /* #13132B */
-    --color-card-hover: 26 26 62;   /* #1A1A3E */
-    --color-text: 255 255 255;      /* #FFFFFF */
-    --color-text-muted: 157 157 181;/* #9D9DB5 */
-    --color-border: 42 42 69;       /* #2A2A45 */
-    --color-primary: 124 115 245;   /* #7C73F5 */
-  }
-
-  html.light {
     --color-bg: 248 248 255;        /* #F8F8FF */
     --color-card: 255 255 255;      /* #FFFFFF */
     --color-card-hover: 240 240 250;/* #F0F0FA */
@@ -23,6 +13,16 @@
     --color-text-muted: 90 90 117;  /* #5A5A75 */
     --color-border: 224 224 237;    /* #E0E0ED */
     --color-primary: 89 77 223;     /* #594DDF */
+  }
+
+  html.dark {
+    --color-bg: 13 13 26;           /* #0D0D1A */
+    --color-card: 19 19 43;         /* #13132B */
+    --color-card-hover: 26 26 62;   /* #1A1A3E */
+    --color-text: 255 255 255;      /* #FFFFFF */
+    --color-text-muted: 157 157 181;/* #9D9DB5 */
+    --color-border: 42 42 69;       /* #2A2A45 */
+    --color-primary: 124 115 245;   /* #7C73F5 */
   }
 
   html {
@@ -39,14 +39,14 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0D0D1A;
+  background: rgb(var(--color-bg));
 }
 ::-webkit-scrollbar-thumb {
-  background: #2A2A45;
+  background: rgb(var(--color-border));
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #7C73F5;
+  background: rgb(var(--color-primary));
 }
 
 /* --- Utility --- */

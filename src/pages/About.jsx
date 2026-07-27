@@ -42,7 +42,7 @@ const About = () => {
         {/* Bio Text */}
         <div className="space-y-6 text-lightText dark:text-textMuted font-body text-base md:text-lg leading-relaxed">
           <p>
-            I'm a Computer Science student from Tamil Nadu specialising in AI/ML and Backend Engineering.
+            I'm an AI/ML Engineer and Backend Developer based in Hyderabad, India.
           </p>
           <p>
             I build intelligent systems — from RAG pipelines and LLM agents to REST APIs and computer vision tools. I led an MSME-funded (₹9 Lakhs) healthcare teleconsultation platform as Team Lead, handling everything from system architecture to backend development.

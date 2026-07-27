@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <Link to="/" className="text-xl font-heading font-bold text-primary">SR</Link>
-          <p className="text-xs font-mono text-textMuted mt-1">AI/ML Developer — Tamil Nadu, India</p>
+          <p className="text-xs font-mono text-textMuted mt-1">AI/ML Developer — Hyderabad, India</p>
         </div>
 
         {/* Nav links */}
