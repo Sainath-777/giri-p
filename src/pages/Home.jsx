@@ -200,7 +200,9 @@ const Home = () => {
               transition={{ delay: 0.6 }}
             >
               <a
-                href="#"
+                href="/Sainath_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-[#8e84f5] text-white rounded-lg font-medium text-sm transition-colors duration-300 shadow-lg shadow-primary/20 active:scale-95"
               >
                 <Download size={16} /> Download Resume
